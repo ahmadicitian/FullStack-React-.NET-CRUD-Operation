@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\2024 - Practice\\DotNetReactCRUD\\DotNetReactCRUD\\wwwroot\\StudentImages\\2dfde3fc-2697-4e9a-afd0-b7af7cc2d27c.jpg",
+      "PackagePath": "staticwebassets\\StudentImages\\2dfde3fc-2697-4e9a-afd0-b7af7cc2d27c.jpg"
+    },
+    {
+      "Id": "D:\\2024 - Practice\\DotNetReactCRUD\\DotNetReactCRUD\\wwwroot\\StudentImages\\40381c2d-7aff-405f-9b69-e8220391adbb.png",
+      "PackagePath": "staticwebassets\\StudentImages\\40381c2d-7aff-405f-9b69-e8220391adbb.png"
+    },
+    {
+      "Id": "D:\\2024 - Practice\\DotNetReactCRUD\\DotNetReactCRUD\\wwwroot\\StudentImages\\4bdd4b17-bbb7-4c01-a8ab-dc28b150b8ac.png",
+      "PackagePath": "staticwebassets\\StudentImages\\4bdd4b17-bbb7-4c01-a8ab-dc28b150b8ac.png"
+    },
+    {
+      "Id": "D:\\2024 - Practice\\DotNetReactCRUD\\DotNetReactCRUD\\wwwroot\\StudentImages\\93c25786-dbf8-4852-b738-2ea2b47d7d05.jpeg",
+      "PackagePath": "staticwebassets\\StudentImages\\93c25786-dbf8-4852-b738-2ea2b47d7d05.jpeg"
+    },
+    {
+      "Id": "D:\\2024 - Practice\\DotNetReactCRUD\\DotNetReactCRUD\\wwwroot\\StudentImages\\ac9ca1f3-28db-4745-b11b-af6765aa3924.jpeg",
+      "PackagePath": "staticwebassets\\StudentImages\\ac9ca1f3-28db-4745-b11b-af6765aa3924.jpeg"
+    },
+    {
+      "Id": "D:\\2024 - Practice\\DotNetReactCRUD\\DotNetReactCRUD\\wwwroot\\StudentImages\\c39745a5-b6c2-4d9f-ba31-b284a9ff9642.png",
+      "PackagePath": "staticwebassets\\StudentImages\\c39745a5-b6c2-4d9f-ba31-b284a9ff9642.png"
+    },
+    {
+      "Id": "D:\\2024 - Practice\\DotNetReactCRUD\\DotNetReactCRUD\\wwwroot\\StudentImages\\c8ec6336-ec55-4273-9220-df0609b4ccc5.jpg",
+      "PackagePath": "staticwebassets\\StudentImages\\c8ec6336-ec55-4273-9220-df0609b4ccc5.jpg"
+    },
+    {
+      "Id": "D:\\2024 - Practice\\DotNetReactCRUD\\DotNetReactCRUD\\wwwroot\\StudentImages\\eece1913-7678-48da-9801-99286c345510.jpeg",
+      "PackagePath": "staticwebassets\\StudentImages\\eece1913-7678-48da-9801-99286c345510.jpeg"
+    },
+    {
+      "Id": "D:\\2024 - Practice\\DotNetReactCRUD\\DotNetReactCRUD\\wwwroot\\StudentImages\\f94905e6-0824-4141-9305-f849b7da9a4d.png",
+      "PackagePath": "staticwebassets\\StudentImages\\f94905e6-0824-4141-9305-f849b7da9a4d.png"
+    },
+    {
+      "Id": "D:\\2024 - Practice\\DotNetReactCRUD\\DotNetReactCRUD\\wwwroot\\StudentImages\\fbcf4bdc-4462-48d0-b997-5c6fae19e805.png",
+      "PackagePath": "staticwebassets\\StudentImages\\fbcf4bdc-4462-48d0-b997-5c6fae19e805.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DotNetReactCRUD.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.DotNetReactCRUD.props",
+      "PackagePath": "build\\DotNetReactCRUD.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.DotNetReactCRUD.props",
+      "PackagePath": "buildMultiTargeting\\DotNetReactCRUD.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.DotNetReactCRUD.props",
+      "PackagePath": "buildTransitive\\DotNetReactCRUD.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

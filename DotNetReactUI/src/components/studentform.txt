@@ -1,0 +1,152 @@
+import React, { useState } from 'react';
+import { SaveStudentData } from '../api/StudentApi';
+
+const AddStudentForm = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        age: '', // example additional field
+        grade: '', // another example
+    });
+    const [imageFile, setImageFile] = useState(null);
+
+    // Handle change for text inputs
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value,
+        }));
+    };
+
+    // Handle file input separately
+    const handleFileChange = (e) => {
+        setImageFile(e.target.files[0]);
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const form = new FormData();
+        // Append all formData fields automatically
+        Object.entries(formData).forEach(([key, value]) => {
+            form.append(key, value);
+        });
+        // Append the file input separately
+        form.append('ImageFile', imageFile);
+
+        try {
+            const response = await SaveStudentData(form);
+            alert('Student added successfully!');
+        } catch (error) {
+            console.error('Error posting student data:', error);
+            alert('Error adding student.');
+        }
+    };
+
+    return (
+        <div>
+            <h2>Add New Student</h2>
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <label>Name:</label>
+                    <input
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+                <div>
+                    <label>Age:</label>
+                    <input
+                        type="number"
+                        name="age"
+                        value={formData.age}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+                <div>
+                    <label>Grade:</label>
+                    <input
+                        type="text"
+                        name="grade"
+                        value={formData.grade}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+                <div>
+                    <label>Image:</label>
+                    <input
+                        type="file"
+                        accept="image/*"
+                        onChange={handleFileChange}
+                        required
+                    />
+                </div>
+                <button type="submit">Add Student</button>
+            </form>
+        </div>
+    );
+};
+
+export default AddStudentForm;
+=============================================================================================
+import React, { useState } from 'react';
+import { SaveStudentData } from '../api/StudentApi';
+
+const AddStudentForm = () => {
+    const [name, setName] = useState('');
+    const [imageFile, setImageFile] = useState(null);
+
+    const handleFileChange = (e) => {
+        setImageFile(e.target.files[0]);
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData();
+        formData.append('Name', name);
+        formData.append('ImageFile', imageFile);
+
+        try {
+            const response = await SaveStudentData(formData);
+            alert('Student added successfully!');
+        } catch (error) {
+            console.error('Error posting student data:', error);
+            alert('Error adding student.');
+        }
+    };
+
+    return (
+        <div>
+            <h2>Add New Student</h2>
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <label>Name:</label>
+                    <input
+                        type="text"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        required
+                    />
+                </div>
+                <div>
+                    <label>Image:</label>
+                    <input
+                        type="file"
+                        accept="image/*"
+                        onChange={handleFileChange}
+                        required
+                    />
+                </div>
+                <button type="submit">Add Student</button>
+            </form>
+        </div>
+    );
+};
+
+export default AddStudentForm;

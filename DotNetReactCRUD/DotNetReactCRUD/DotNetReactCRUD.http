@@ -1,0 +1,6 @@
+@DotNetReactCRUD_HostAddress = http://localhost:5218
+
+GET {{DotNetReactCRUD_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

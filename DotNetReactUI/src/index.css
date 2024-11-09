@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.table-container {
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.responsive-table th,
+.responsive-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.responsive-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+
+  .responsive-table th,
+  .responsive-table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .responsive-table th {
+    background-color: #eee;
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  .responsive-table td {
+    text-align: left;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .responsive-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: calc(50% - 20px);
+    font-weight: bold;
+    text-align: left;
+  }
+}
