@@ -1,1 +1,67 @@
+{
+  "user": {
+    "personal_info": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "gender": "Male",
+      "date_of_birth": "1990-05-15",
+      "nationality": "American"
+    },
+    "contact_info": {
+      "email": "john.doe@example.com",
+      "phone_number": "+1-555-1234",
+      "address": {
+        "street": "123 Main Street",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10001",
+        "country": "USA"
+      }
+    },
+    "professional_info": {
+      "occupation": "Software Developer",
+      "company": "Tech Solutions Inc.",
+      "work_email": "john.doe@techsolutions.com",
+      "work_phone": "+1-555-5678",
+      "years_of_experience": 5,
+      "skills": [
+        "JavaScript",
+        "Python",
+        "Node.js",
+        "React",
+        "SQL"
+      ]
+    },
+    "education": [
+      {
+        "degree": "B.Sc. in Computer Science",
+        "institution": "University of XYZ",
+        "graduation_year": 2012,
+        "location": "New York, USA"
+      },
+      {
+        "degree": "M.Sc. in Software Engineering",
+        "institution": "University of ABC",
+        "graduation_year": 2015,
+        "location": "California, USA"
+      }
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "proficiency": "Native"
+      },
+      {
+        "language": "Spanish",
+        "proficiency": "Intermediate"
+      }
+    ],
+    "hobbies": [
+      "Reading",
+      "Traveling",
+      "Coding",
+      "Photography"
+    ]
+  }
+}
 
